@@ -31,6 +31,11 @@ public class Member {
             changeTeam(team);
     }
 
+    public Member(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+
     public void changeTeam(Team team) {
         this.team = team;
         team.getMemberList().add(this); // Team 도메인에 있는 memberList도 바꿔줘야 한다
